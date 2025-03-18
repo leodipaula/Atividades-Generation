@@ -27,6 +27,7 @@ public class Atividade3 {
                     "Talvez você tenha digitado um tipo não numérico \nou usado ponto ao invés da vírgula para separar as casas decimais.");
             e.printStackTrace();
         }
+        scanner.close();
     }
 
     private static double calcularSalarioLiquido(double salarioBruto, double adicionarNoturno, double horasExtras,

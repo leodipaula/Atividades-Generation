@@ -26,6 +26,7 @@ public class Atividade4 {
                     "Talvez você tenha digitado um tipo não numérico \nou usado ponto ao invés da vírgula para separar as casas decimais.");
             e.printStackTrace();
         }
+        scanner.close();
     }
 
     private static float calcularDiferenca(float n1, float n2, float n3, float n4) {
