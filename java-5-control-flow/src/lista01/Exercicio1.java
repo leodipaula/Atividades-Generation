@@ -33,10 +33,10 @@ public class Exercicio1 {
         int soma = a + b;
         if (soma > c)
             System.out.println("A soma de A e B é maior que C");
-        else if (soma == c)
-            System.out.println("A soma de A e B é igual a C");
+        else if (soma < c)
+            System.out.println("A soma de A e B é menor a C");
         else
-            System.out.println("A soma de A e B não é maior que C");
+            System.out.println("A soma de A e B é igual a C");
 
     }
 }
