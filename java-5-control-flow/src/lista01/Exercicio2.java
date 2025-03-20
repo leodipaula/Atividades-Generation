@@ -22,7 +22,8 @@ public class Exercicio2 {
 
     private static void verificarSeNumeroEhPar(int numero) {
         if (numero % 2 == 0)
-            System.out.println("O número é par e " + (numero > 0 ? "positivo" : "negativo"));
+            System.out.println(
+                    "O número é par e " + (numero == 0 ? "neutro" : numero > 0 ? "positivo" : "negativo"));
         else
             System.out.println("O número é ímpar e " + (numero > 0 ? "positivo" : "negativo"));
 

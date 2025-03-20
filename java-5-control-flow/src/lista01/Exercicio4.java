@@ -8,13 +8,13 @@ public class Exercicio4 {
         Scanner sc = new Scanner(System.in);
 
         try {
-            System.out.println("Digite o primeiro caractere, sem acentos: ");
+            System.out.println("Digite a primeira característica, sem acentos: ");
             caract1 = sc.nextLine();
 
-            System.out.println("Digite o segundo caractere, sem acentos: ");
+            System.out.println("Digite a segunda característica, sem acentos: ");
             caract2 = sc.nextLine();
 
-            System.out.println("Digite o terceiro caractere, sem acentos: ");
+            System.out.println("Digite a terceira característica, sem acentos: ");
             caract3 = sc.nextLine();
 
         } catch (Exception e) {
