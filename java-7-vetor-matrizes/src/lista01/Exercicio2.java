@@ -7,7 +7,7 @@ public class Exercicio2 {
         Scanner sc = new Scanner(System.in);
         int[] vetor = ler10Numeros(sc);
         elementosIndicesImpares(vetor);
-        elementosIndicesPares(vetor);
+        elementosPares(vetor);
         somaEMediaDosNumerosDoVetor(vetor);
 
         sc.close();
@@ -16,28 +16,26 @@ public class Exercicio2 {
     private static void somaEMediaDosNumerosDoVetor(int[] vetor) {
         int soma = 0;
 
-        for (int i = 0; i < vetor.length; i++) {
+        for (int i = 0; i < vetor.length; i++)
             soma += vetor[i];
-        }
 
         System.out.println("\n\nSoma: " + soma);
         System.out.printf("\nMédia: %.2f \n", (float) soma / vetor.length);
     }
 
-    private static void elementosIndicesPares(int[] vetor) {
-        System.out.println("\n\nElementos índices pares: ");
+    private static void elementosPares(int[] vetor) {
+        System.out.println("\n\nElementos pares: ");
 
-        for (int i = 0; i < vetor.length; i += 2) {
-            System.out.print(vetor[i] + " ");
-        }
+        for (int i = 0; i < vetor.length; i++)
+            if (vetor[i] % 2 == 0)
+                System.out.println(vetor[i] + " ");
     }
 
     private static void elementosIndicesImpares(int[] vetor) {
         System.out.println("\nElementos índices ímpares: ");
 
-        for (int i = 1; i < vetor.length; i += 2) {
+        for (int i = 1; i < vetor.length; i += 2)
             System.out.print(vetor[i] + " ");
-        }
     }
 
     private static int[] ler10Numeros(Scanner sc) {
