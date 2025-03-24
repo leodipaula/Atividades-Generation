@@ -20,7 +20,6 @@ public class Exercicio4 {
                 notas[i][j] = sc.nextFloat();
             }
         }
-
         return notas;
     }
 
